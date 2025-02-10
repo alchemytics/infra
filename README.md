@@ -16,5 +16,5 @@
 architecture-beta
     group alchemytics[Alchemytics Project]
 
-    service website(mdi:web)[website] in alchemytics
+    service website(internet)[website] in alchemytics
 ```
