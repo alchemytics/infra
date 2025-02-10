@@ -19,7 +19,7 @@
 
 ```mermaid
 flowchart LR
-    subgraph websites
+    subgraph websites_basic[Основные сайты]
     direction TB
         website@{ shape: rounded }
         profile@{ shape: rounded }
@@ -29,7 +29,7 @@ flowchart LR
 
     jWebsiteToApi@{ shape: f-circ }
 
-    subgraph internal
+    subgraph internal[Внутренние службы]
     direction LR
         api@{ shape: rounded }
         db@{ shape: cyl }
@@ -39,7 +39,7 @@ flowchart LR
         api --> s3
     end
 
-    websites --> jWebsiteToApi --> api
+    websites_basic --> jWebsiteToApi --> api
 ```
 
 # Инструкция CI/CD
